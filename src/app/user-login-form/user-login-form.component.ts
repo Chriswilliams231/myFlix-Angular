@@ -5,6 +5,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { UserLoginService } from '../fetch-api-data.service';
 // This import is used to display notifications back to the user
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-login-form',
@@ -16,7 +17,8 @@ export class UserLoginFormComponent implements OnInit {
   constructor(
     public fetchApiData: UserLoginService,
     public dialogRef: MatDialogRef<UserLoginFormComponent>,
-    public snackBar: MatSnackBar
+    public snackBar: MatSnackBar,
+    public router: Router //cannot use 'this.router...' below without this line
   ) {}
 
   ngOnInit(): void {}
@@ -32,6 +34,7 @@ export class UserLoginFormComponent implements OnInit {
         this.snackBar.open('User logged in successfully!', 'OK', {
           duration: 2000,
         });
+        this.router.navigate(['movies']);
       },
       (response) => {
         console.log(response);

@@ -1,0 +1,19 @@
+img {
+  display: block;
+  width: 265px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.all-movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mat-card {
+  margin: 20px;
+  width: 300px;
+  padding-bottom: 50px;
+}

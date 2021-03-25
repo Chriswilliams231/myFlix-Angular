@@ -1,0 +1,82 @@
+.body {
+  background-color: #b6b7b8;
+}
+.user-profile {
+  display: flex;
+  float: right;
+  position: sticky;
+  top: 0px;
+}
+
+.profile-info {
+  background-color: rgba(55, 71, 79, 0.4);
+  width: 347px;
+  margin-right: 35px;
+  margin-top: 73px;
+}
+
+.your-info {
+  margin-left: -18px;
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.update-profile {
+  border: 1px solid black;
+  opacity: 0.5;
+}
+
+.delete-profile {
+  border: 1px solid black;
+  opacity: 0.8;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  padding-top: 25px;
+}
+
+.favorite {
+  margin: 20px;
+  width: 225px;
+}
+
+.favorite-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.favorite-title {
+  text-align: center;
+  letter-spacing: 1px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.remove-favorite {
+  display: flex;
+  justify-content: center;
+}
+
+.remove-button {
+  position: absolute;
+  bottom: 0;
+}
+
+button {
+  font-size: 11px;
+}

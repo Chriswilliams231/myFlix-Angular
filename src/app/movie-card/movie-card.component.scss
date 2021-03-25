@@ -10,10 +10,17 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #b6b7b8;
 }
 
 .mat-card {
   margin: 20px;
   width: 300px;
   padding-bottom: 50px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
